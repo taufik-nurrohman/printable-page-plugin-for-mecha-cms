@@ -3,9 +3,9 @@
 Weapon::add('shield_before', function() {
     $config = Config::get();
     $request = Request::get();
-    if(isset($request['print']) && ($request['print'] == 'true' || $request['print'] == '1')) {
+    if(isset($request['print']) && ($request['print'] == '1' || $request['print'] == 'true')) {
         if($config->page_type == 'article' || $config->page_type == 'page') {
-            Filter::add('shield:path', function($path) {
+            Filter::add('shield:path', function() {
                 return PLUGIN . DS . 'printable-page' . DS . 'workers' . DS . 'page.php';
             });
         }
