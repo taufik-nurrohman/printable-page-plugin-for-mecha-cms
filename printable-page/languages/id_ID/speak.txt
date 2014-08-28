@@ -1,0 +1,4 @@
+plugin_printable_page_title_print: Cetak
+plugin_printable_page_title_printing: `Mencetak: `
+
+plugin_printable_page_description_print_css: <abbr title="Cascading Style Sheet">CSS</abbr> halaman pencetakan:

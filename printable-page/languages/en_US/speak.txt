@@ -1,0 +1,4 @@
+plugin_printable_page_title_print: Print
+plugin_printable_page_title_printing: `Printing: `
+
+plugin_printable_page_description_print_css: Printing page&rsquo;s <abbr title="Cascading Style Sheet">CSS</abbr>:

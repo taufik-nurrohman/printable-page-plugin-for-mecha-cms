@@ -1,0 +1,18 @@
+Title: Mode Halaman Cetak
+Author: Taufik Nurrohman
+URL: http://latitudu.com
+Version: 1.0.0
+
+====
+
+> Menambahkan kemampuan untuk menampilkan artikel/halaman statis dalam mode cetak.
+
+Halaman pencetakan Anda akan tersedia di `{{url}}{{php}}echo Config::get('index.slug');{{/php}}/foo?print=1` atau `{{url}}{{php}}echo Config::get('index.slug');{{/php}}/foo?print=true` untuk artikel dan `{{url}}bar?print=1` atau `{{url}}bar?print=true` untuk halaman statis.
+
+Anda bisa membuat tautan pintasan menuju halaman pencetakan dengan cara meletakkan kode HTML ini di mana saja di dalam berkas `article.php` dan `page.php` Anda:
+
+~~~ .html
+<a href="?print=1" rel="nofollow">Cetak</a>
+~~~
+
+*[HTML]: Hyper Text Markup Language
