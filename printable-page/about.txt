@@ -1,13 +1,13 @@
 Title: Printable Page
 Author: Taufik Nurrohman
 URL: http://latitudu.com
-Version: 1.0.0
+Version: 1.0.1
 
 ====
 
 > Add ability to view your article/static page in printable page mode.
 
-Your printable page will be available at `{{url}}{{php}}echo Config::get('index.slug');{{/php}}/foo?print=1` or `{{url}}{{php}}echo Config::get('index.slug');{{/php}}/foo?print=true` for articles and `{{url}}bar?print=1` or `{{url}}bar?print=true` for pages.
+Your printable page will be available at `{{url.article}}foo?print=1` or `{{url.article}}foo?print=true` for articles and `{{url}}bar?print=1` or `{{url}}bar?print=true` for pages.
 
 You can create a shortcut link to the printing page by putting this HTML code anywhere in your `article.php` and `page.php` file:
 
