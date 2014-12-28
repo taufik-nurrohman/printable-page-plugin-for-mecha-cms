@@ -1,7 +1,7 @@
 Title: Printable Page
 Author: Taufik Nurrohman
 URL: http://latitudu.com
-Version: 1.0.1
+Version: 1.0.2
 
 ====
 
@@ -9,7 +9,7 @@ Version: 1.0.1
 
 Your printable page will be available at `{{url.article}}foo?print=1` or `{{url.article}}foo?print=true` for articles and `{{url}}bar?print=1` or `{{url}}bar?print=true` for pages.
 
-You can create a shortcut link to the printing page by putting this HTML code anywhere in your `article.php` and `page.php` file:
+You can make a shortcut link to the printing page by putting this HTML code anywhere in your `article.php` and `page.php` file:
 
 ~~~ .html
 <a href="?print=1" rel="nofollow">Print</a>
