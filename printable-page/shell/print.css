@@ -104,7 +104,12 @@ h4 {font-size:140%}
 h5 {font-size:120%}
 h6 {font-size:100%}
 
-hr {border-top:1px solid}
+hr {
+  background:none;
+  border:none;
+  color:inherit;
+  border-top:1px solid;
+}
 
 abbr[title],
 dfn[title] {border-bottom:1px dotted}
@@ -152,7 +157,8 @@ figcaption,figure,ol,ul,p,pre,
 table,.fluid-video,.grid-group,
 .image-container {margin:1.3846153846153846em 0 0}
 
-.p {
+.p,
+.footnotes {
   display:block;
   margin-top:1.3846153846153846em;
 }
