@@ -6,7 +6,7 @@
     <meta name="googlebot" content="noindex">
     <link href="<?php echo $config->url; ?>/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <title><?php echo $speak->plugin_printable_page_title_printing . strip_tags($config->page_type === 'article' ? $article->title : $page->title); ?></title>
-    <?php echo Asset::stylesheet(PLUGIN . DS . basename(dirname(__DIR__)) . DS . 'shell' . DS . 'print.css'); ?>
+    <?php echo Asset::stylesheet(PLUGIN . DS . File::B(File::D(__DIR__)) . DS . 'assets' . DS . 'shell' . DS . 'print.css'); ?>
   </head>
   <body>
     <div class="print-actions"><a href="javascript:window.print();"><?php echo $speak->plugin_printable_page_title_print; ?></a></div>
