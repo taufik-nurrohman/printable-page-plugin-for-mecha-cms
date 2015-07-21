@@ -264,8 +264,8 @@ img {
  */
 
 .toc-block,
-.toc-permalink,
-.toc-back {display:none}
+.toc-back,
+.toc-point {display:none}
 
 
 /**
