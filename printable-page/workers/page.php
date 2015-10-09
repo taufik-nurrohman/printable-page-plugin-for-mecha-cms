@@ -9,8 +9,10 @@
     <?php echo Asset::stylesheet(PLUGIN . DS . File::B(File::D(__DIR__)) . DS . 'assets' . DS . 'shell' . DS . 'print.css'); ?>
   </head>
   <body>
-    <div class="print-actions"><a href="javascript:window.print();"><?php echo $speak->plugin_printable_page_title_print; ?></a></div>
+    <div class="print-action-group">
+      <a href="javascript:window.print();"><?php echo $speak->plugin_printable_page_title_print; ?></a>
+    </div>
     <h1 class="page-title"><?php echo $config->page_type === 'article' ? $article->title : $page->title; ?></h1>
-    <div class="page-content p"><?php echo $config->page_type === 'article' ? $article->content : $page->content; ?></div>
+    <div class="page-content"><?php echo $config->page_type === 'article' ? $article->content : $page->content; ?></div>
   </body>
 </html>
