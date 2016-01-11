@@ -172,7 +172,7 @@ img {
   page-break-inside:avoid;
 }
 
-a:after {content:" (" attr(href) ")"}
+a:after {content:" <" attr(href) ">"}
 
 a[href^="javascript"]:after,
 a[href^="#"]:after,
@@ -218,15 +218,6 @@ dfn[title]:after {content:" (" attr(title) ")"}
 .print-action-group a:focus,
 .print-action-group a:hover {background-color:red}
 .print-action-group a:active {background-color:darkred}
-
-
-/**
- * Hide plugin stuff ...
- */
-
-.toc-block,
-.toc-back,
-.toc-point {display:none}
 
 
 /**
